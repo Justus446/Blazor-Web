@@ -1,0 +1,50 @@
+[
+    {
+        "description": "portable bench table",
+        "img": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/62/914023/1.jpg?9472",
+        "name": "Table",
+        "price": "12000.00",
+        "product_id": "11112334",
+        "type": "Woodworking Furniture"
+    },
+    {
+        "description": "miniature wood curving tool",
+        "img": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/02/476323/1.jpg?1711",
+        "name": "Chisel",
+        "price": "1000.00",
+        "product_id": "45792993",
+        "type": "Electronic"
+    },
+    {
+        "description": "Generic woodworking tool",
+        "img": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/75/446913/1.jpg?1568",
+        "name": "Wooddrill",
+        "price": "14000.00",
+        "product_id": "987666282",
+        "type": "Woodworking tool"
+    },
+    {
+        "description": "Electric circular wood cutter",
+        "img": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/05/676603/1.jpg?5277",
+        "name": "Woodcutter",
+        "price": "7650.00",
+        "product_id": "107800",
+        "type": "Electronic"
+    },
+    {
+        "description": "portable DIY bench table",
+        "img": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/475603/1.jpg?1428",
+        "name": "Bench",
+        "price": "4500.00",
+        "product_id": "12050890",
+        "type": "Furniture"
+    },
+    {
+        "description": "Miniature precision table",
+        "img": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/52/453093/1.jpg?3523",
+        "name": "Precision table",
+        "price": "6999.00",
+        "product_id": "45632135",
+        "type": "furniture"
+    }
+]

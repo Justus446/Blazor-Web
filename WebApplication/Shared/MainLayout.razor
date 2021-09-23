@@ -1,0 +1,39 @@
+﻿@inherits LayoutComponentBase
+
+
+
+    <style>
+        .justus {
+            background-color: #85C1E9;
+        }
+    </style>
+
+    <div class="justus">
+        <div class="sidebar">
+            <NavMenu />
+        </div>
+    </div>
+
+
+    <div class="main">
+
+        <div class="justus">
+            <div class=" justus">
+                <div class="top-row px-4">
+                    <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+                </div>
+            </div>
+
+
+            <a href="products" target="_blank"><RadzenButton Text="Products" Icon="receipt" ButtonStyle="ButtonStyle.Secondary"  /></a>
+
+
+
+            <a href="order" target="_blank"><RadzenButton Text="Orders" Icon="shopping_basket" ButtonStyle="ButtonStyle.Secondary"  /></a>
+
+        </div>
+
+        <div class="content px-4">
+            @Body
+        </div>
+    </div>

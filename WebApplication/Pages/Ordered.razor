@@ -1,0 +1,51 @@
+﻿@page "/order"
+@using System.Text.Json
+@using System.IO
+@using WebApplication.Data
+
+
+
+<h3>Ordered</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in jsonFile)
+        {
+            <tr>
+                <td>@product.productName</td>
+                <td>@product.productPrice</td>
+                <td>@product.productDescription</td>
+                <td>@product.productType</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+@code {
+
+
+    private  static StreamReader r = new StreamReader(@"orderd.json");
+    private static string json = r.ReadToEnd();
+
+    public static List<Products> GetProducts()
+    {
+        return JsonSerializer.Deserialize<List<Products>>(json,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+    }
+
+    private List<Products> jsonFile = GetProducts();
+
+
+
+}

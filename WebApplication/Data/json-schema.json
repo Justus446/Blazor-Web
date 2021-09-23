@@ -1,0 +1,192 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "array",
+    "items": [
+        {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "img": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "integer"
+                },
+                "product_id": {
+                    "type": "integer"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "description",
+                "img",
+                "name",
+                "price",
+                "product_id",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "img": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "integer"
+                },
+                "product_id": {
+                    "type": "integer"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "description",
+                "img",
+                "name",
+                "price",
+                "product_id",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "img": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "integer"
+                },
+                "product_id": {
+                    "type": "integer"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "description",
+                "img",
+                "name",
+                "price",
+                "product_id",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "img": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "integer"
+                },
+                "product_id": {
+                    "type": "integer"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "description",
+                "img",
+                "name",
+                "price",
+                "product_id",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "img": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "integer"
+                },
+                "product_id": {
+                    "type": "integer"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "description",
+                "img",
+                "name",
+                "price",
+                "product_id",
+                "type"
+            ]
+        },
+        {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "img": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "integer"
+                },
+                "product_id": {
+                    "type": "integer"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "description",
+                "img",
+                "name",
+                "price",
+                "product_id",
+                "type"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+﻿@page "/products"
+@using WebApplication.Data
+@inject ProductsService productService
+@using System.Collections.Generic
+@using System.Text.Json
+@using System.IO
+
+
+
+
+<RadzenTextBox Placeholder="Search Product..." @bind-Value="@name" Change=@Search />
+<RadzenButton Text="Search" Icon="" ButtonStyle="ButtonStyle.Secondary" />
+@if (products == null)
+{
+    <p>Products loading...</p>
+}
+
+else
+{
+    <RadzenDataList WrapItems="true" AllowPaging="true" Data="@products" TItem="Products">
+        <Template Context="product">
+            <RadzenCard Style="width:300px;">
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div style="margin-top:20px"><b>@(product.productName)</b></div>
+
+                        <br />
+
+
+                        <RadzenImage Path="@product.productImage" Style="width:150px;" />
+                        <RadzenButton Text="Add" Icon="shopping_cart" Click=@AddToCart ButtonStyle="ButtonStyle.Secondary" ></RadzenButton>
+                    </div>
+                    <div class="col-md-6">
+
+
+                        <div style="margin-top:20px">Price:</div>
+                        <b>@String.Format(new System.Globalization.CultureInfo("en-US"), "{0:C}", product.productPrice)</b>
+                        <div style="margin-top:20px">Product Category:</div>
+                        <b>@(product.productType)</b>
+                        <div style="margin-top:20px">Serial :</div>
+                        <b>@(product.productId)</b>
+                    </div>
+                </div>
+            </RadzenCard>
+        </Template>
+    </RadzenDataList>
+}
+<RadzenButton Text="View Cart" Icon="shopping_cart" Click="@ShowCart"></RadzenButton>
+
+@code {
+
+    List<Products> products;
+    List<String> table;
+    Products product = null;
+    private static string name;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await Task.Run(() => productService.GetProductsAsync());
+    }
+
+
+    void AddToCart()
+    {
+
+
+
+        StreamReader r = new StreamReader(@"orderd.json");
+        string json = r.ReadToEnd();
+
+        var jsonFile = JsonSerializer.Deserialize<List<Products>>(json,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+        jsonFile.Add(product);
+
+        JsonSerializer.Serialize(jsonFile);
+
+
+
+    }
+
+
+    void ShowCart()
+    {
+
+
+    }
+
+
+    void Search()
+    {
+        
+
+    }
+}
