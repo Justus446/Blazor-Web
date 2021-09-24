@@ -46,5 +46,54 @@
         "price": "6999.00",
         "product_id": "45632135",
         "type": "furniture"
+    },
+
+    {
+        "description": "portable bench table",
+        "img": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/18/095843/1.jpg?7218",
+        "name": "Generic mic",
+        "price": "159.00",
+        "product_id": "11112334",
+        "type": "Woodworking Furniture"
+    },
+    {
+        "description": "miniature wood curving tool",
+        "img": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/63/323803/1.jpg?8753",
+        "name": "product 2",
+        "price": "1000.00",
+        "product_id": "45792993",
+        "type": "Electronic"
+    },
+    {
+        "description": "Generic woodworking tool",
+        "img": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/28/751682/1.jpg?5504",
+        "name": "Mabati",
+        "price": "14000.00",
+        "product_id": "987666282",
+        "type": "Woodworking tool"
+    },
+    {
+        "description": "Electric circular wood cutter",
+        "img": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/24/281064/1.jpg?7057",
+        "name": "Ceramic",
+        "price": "7650.00",
+        "product_id": "107800",
+        "type": "Electronic"
+    },
+    {
+        "description": "portable DIY bench table",
+        "img": "https://www.jumia.co.ke/rotating-14-55-3d-tv-tilt-moving-wall-mount-bracket-generic-mpg134633.html",
+        "name": "Laptop",
+        "price": "4500.00",
+        "product_id": "12050890",
+        "type": "Television"
+    },
+    {
+        "description": "Miniature precision table",
+        "img": "https://www.jumia.co.ke/rotating-14-55-3d-tv-tilt-moving-wall-mount-bracket-generic-mpg134633.html",
+        "name": "Phone",
+        "price": "6999.00",
+        "product_id": "45632135",
+        "type": "furniture"
     }
 ]

@@ -4,6 +4,7 @@
 @using System.Collections.Generic
 @using System.Text.Json
 @using System.IO
+@inject NavigationManager NavigationManager
 
 
 
@@ -19,27 +20,23 @@ else
 {
     <RadzenDataList WrapItems="true" AllowPaging="true" Data="@products" TItem="Products">
         <Template Context="product">
-            <RadzenCard Style="width:300px;">
-                
+            <RadzenCard Style="width:200px;">
+
                 <div class="row">
                     <div class="col-md-6">
+
+                        <a href="item">
+                            <RadzenImage Path="@product.productImage" @onclick="ShowProduct" Style="width:100px;" />
+              
+                        </a>
                         <div style="margin-top:20px"><b>@(product.productName)</b></div>
-
-                        <br />
-
-
-                        <RadzenImage Path="@product.productImage" Style="width:150px;" />
-                        <RadzenButton Text="Add" Icon="shopping_cart" Click=@AddToCart ButtonStyle="ButtonStyle.Secondary" ></RadzenButton>
+                        <div style="margin-top:20px"><b>@(product.productPrice)</b></div>
+                        <RadzenButton Text="Add" Icon="shopping_cart" Click=@AddToCart ButtonStyle="ButtonStyle.Secondary"></RadzenButton>
                     </div>
                     <div class="col-md-6">
 
 
-                        <div style="margin-top:20px">Price:</div>
-                        <b>@String.Format(new System.Globalization.CultureInfo("en-US"), "{0:C}", product.productPrice)</b>
-                        <div style="margin-top:20px">Product Category:</div>
-                        <b>@(product.productType)</b>
-                        <div style="margin-top:20px">Serial :</div>
-                        <b>@(product.productId)</b>
+
                     </div>
                 </div>
             </RadzenCard>
@@ -89,9 +86,15 @@ else
     }
 
 
+    void ShowProduct()
+
+    {   
+        NavigationManager.NavigateTo("item");
+    }
+
     void Search()
     {
-        
+
 
     }
 }
