@@ -1,3 +1,2 @@
 # Blazor-Web
-A simple mobile friendly products menu made using blazor
-Data stored in json file
+An Ecommerce site built with Blazor Server-C# 
